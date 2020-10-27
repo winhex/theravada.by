@@ -36,6 +36,7 @@
 	p
 	{
 		line-height: 180%;
+		text-align: justify;
 	}
 	
 	strong
@@ -412,12 +413,12 @@
 		margin: 0 auto;
 	}
 
-	#stwo-col
+	.stwo-col
 	{
 		margin-top: 2em;
 	}
 
-	#stwo-col h2
+	.stwo-col h2
 	{
 		display: block;
 		padding-bottom: 1.5em;
@@ -428,17 +429,15 @@
 		color: #454445;
 	}
 
-	#stwo-col .sbox1
+	.stwo-col .sbox1,
+	.stwo-col .sbox2
 	{
-		float: left;
-		width: 230px;
+		
+		max-width: 230px;
+		margin: auto;
 	}
 
-	#stwo-col .sbox2
-	{
-		float: right;
-		width: 230px;
-	}
+	
 
 /*********************************************************************************/
 /* Footer                                                                        */
@@ -497,16 +496,28 @@
 	.header {
 		flex-direction: column;
 		height: 289px;
+		justify-content: flex-start;
 		/*min-height: 150px;*/
 
 	}
 
-	.logo,
+	.logo {
+		margin: 0 auto;
+		line-height: 100px;
+	}
 	.menu {
 		margin: 0 auto;
+		flex-direction: column;
+}
+
+.page {
+	flex-direction: column;
+}
+
+.menu-link {
+	height: 40px;
+	line-height: 40px;
+}
 	}
 
-	.page {
-		flex-direction: column;
-	}
-}
+	
